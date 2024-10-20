@@ -76,7 +76,7 @@ public class Main {
 
     }
     public static int scoreCalculator(double carbonemitted) {
-        // average co2 a day is ~28,000
+        // Average co2 a day is ~28,000
         if (carbonemitted <= 5600) {
             return 5;
         } else if (carbonemitted > 5600 && carbonemitted <=11200){
