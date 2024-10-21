@@ -66,6 +66,7 @@ public class Main {
                         System.out.println("Error, invalid input. Please choose a valid option.");
                         continue;
                 }
+                System.out.println("Carbon emitted: " + carbonemitted + "g");
                 System.out.println(score +"/5");
                 break;
             }
@@ -77,7 +78,7 @@ public class Main {
     }
     public static int scoreCalculator(double carbonemitted) {
         // Average co2 a day is ~28,000
-        if (carbonemitted <= 5600) {
+        if (carbonemitted <= 5600) { // these are rough numbers
             return 5;
         } else if (carbonemitted > 5600 && carbonemitted <=11200){
             return 4;
